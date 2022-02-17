@@ -1,0 +1,64 @@
+body {
+  padding: 2rem;
+}
+/* BURGERMENU */
+.toggle-btn {
+  display: none;
+  flex-direction: row;
+  font-family: "Didact Gothic", sans-serif;
+}
+/* GRID*/
+section {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+}
+img {
+  max-width: 100%;
+  max-height: 200px;
+  max-width: 300px;
+  min-height: 200px;
+  min-width: 300px;
+}
+.container {
+  height: 200px;
+  position: relative;
+}
+
+.center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/* STYLING AF TEKST */
+header h1 {
+  font-family: "Didact Gothic", sans-serif;
+  color: black;
+  text-align: center;
+  font-size: 4rem;
+}
+header h2 {
+  font-family: "Didact Gothic", sans-serif;
+  color: black;
+  text-align: center;
+  font-size: 2rem;
+}
+/* KNAPPER */
+button {
+  background-color: white;
+  transition-duration: 0.5s;
+  margin: 0.2rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+  min-width: 115px;
+}
+
+button:hover {
+  background-color: grey;
+}
+p {
+  font-family: "Didact Gothic", sans-serif;
+}
