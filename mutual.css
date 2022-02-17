@@ -3,6 +3,18 @@ body {
   padding: 3rem;
   background-color: rgb(240, 241, 243);
 }
+/* Style all font icons */
+.fa {
+  padding: 2rem;
+  size: 5rem;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
 /* burgermenu */
 .toggle-btn {
   display: none;
@@ -34,12 +46,7 @@ img {
   left: 50%;
   margin-left: 10rem;
 }
-header h1 {
-  font-family: "Didact Gothic", sans-serif;
-  color: black;
-  text-align: center;
-  font-size: 4rem;
-}
+
 header h2 {
   font-family: "Didact Gothic", sans-serif;
   color: black;
@@ -157,9 +164,9 @@ footer {
   }
 }
 @media (max-width: 900px) {
-  button:hover {
+  /* button:hover {
     background-color: grey;
-  }
+  } */
   .center {
     margin-left: 3rem;
   }
@@ -168,6 +175,9 @@ footer {
   }
   img {
     margin-right: 10rem;
+  }
+  .overskrift {
+    min-width: 600px;
   }
 }
 
@@ -183,6 +193,9 @@ footer {
   }
   .center {
     margin-left: 22rem;
+  }
+  .overskrift {
+    min-width: 700px;
   }
   /* .line {
     box-shadow: 0 0 0 0.0625rem #000;
