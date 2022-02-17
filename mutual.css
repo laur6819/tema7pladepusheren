@@ -7,6 +7,31 @@ body {
   flex-direction: row;
   font-family: "Didact Gothic", sans-serif;
 }
+.toggle-btn {
+  background: transparent;
+  border: none;
+  display: block;
+  min-width: 44px;
+  min-height: 44px;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+nav {
+  display: none;
+}
+
+nav.shown {
+  border-top: 1px solid #000;
+  padding-top: 1rem;
+  display: flex;
+  flex: 1 1 100%;
+  flex-flow: column;
+}
+
+nav ul {
+  display: flex;
+  flex-flow: column;
+}
 /* GRID*/
 section {
   display: grid;
@@ -61,4 +86,32 @@ button:hover {
 }
 p {
   font-family: "Didact Gothic", sans-serif;
+  font-size: 1rem;
+  max-width: 40ch;
+  color: rgb(61, 60, 60);
+}
+#modal {
+  display: none;
+  width: 100vw;
+  height: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  /* background-color: rgb(243, 243, 243); */
+}
+
+#modal article {
+  max-width: 900px;
+  margin: 2rem;
+  /* background-color: rgb(243, 243, 243); */
+}
+
+#modal p {
+  max-width: 40ch;
+  line-height: 1.5rem;
+}
+
+footer {
+  text-align: center;
+  margin-top: 5rem;
 }
