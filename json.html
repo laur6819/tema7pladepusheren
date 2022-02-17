@@ -18,190 +18,10 @@
       href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="mutual.css" />
     <!-- favikon -->
     <!-- <link rel="icon" type="image/svg+xml" href="/medium/favikontema7.svg" /> -->
     <title>Pladepusheren</title>
-    <style>
-      body {
-        padding: 2rem;
-      }
-      /* burgermenu */
-      .toggle-btn {
-        display: none;
-        flex-direction: row;
-        font-family: "Didact Gothic", sans-serif;
-      }
-      section {
-        display: grid;
-        grid-template-columns: repeat(5, 1fr);
-        grid-template-rows: repeat(3, 1fr);
-        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-      }
-      img {
-        max-width: 100%;
-        max-height: 200px;
-        max-width: 300px;
-        min-height: 200px;
-        min-width: 300px;
-      }
-      .container {
-        height: 200px;
-        position: relative;
-      }
-
-      .center {
-        margin: 0;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        /* transform: translate(-50%, -50%); */
-      }
-      header h1 {
-        font-family: "Didact Gothic", sans-serif;
-        color: black;
-        text-align: center;
-        font-size: 4rem;
-      }
-      header h2 {
-        font-family: "Didact Gothic", sans-serif;
-        color: black;
-        text-align: center;
-        font-size: 2rem;
-      }
-      button {
-        background-color: white;
-        transition-duration: 0.5s;
-        margin: 0.2rem;
-        padding: 0.5rem;
-        font-size: 1rem;
-        min-width: 115px;
-      }
-
-      button:hover {
-        background-color: grey;
-      }
-      p {
-        font-family: "Didact Gothic", sans-serif;
-      }
-
-      @media (min-width: 150px) {
-        h2 {
-          margin-left: 4rem;
-        }
-        p {
-          margin-left: 4rem;
-        }
-        img {
-          margin-left: 4rem;
-        }
-
-        #modal {
-          display: none;
-          width: 100vw;
-          height: 100vw;
-          position: fixed;
-          top: 0;
-          left: 0;
-          /* background-color: rgb(243, 243, 243); */
-        }
-
-        #modal article {
-          max-width: 900px;
-          margin: 2rem;
-          /* background-color: rgb(243, 243, 243); */
-        }
-
-        #modal p {
-          max-width: 40ch;
-          line-height: 1.5rem;
-        }
-
-        /* img {
-          border: solid rgb(83, 83, 83);
-        } */
-
-        p {
-          font-size: 1rem;
-          max-width: 40ch;
-          color: rgb(61, 60, 60);
-        }
-        footer {
-          text-align: center;
-          margin-top: 5rem;
-        }
-      }
-
-      /* knapperne når de er i mobil */
-      @media (max-width: 650px) {
-        .toggle-btn {
-          background: transparent;
-          border: none;
-          display: block;
-          min-width: 44px;
-          min-height: 44px;
-          font-size: 1.1rem;
-          cursor: pointer;
-        }
-
-        nav {
-          display: none;
-        }
-
-        nav.shown {
-          border-top: 1px solid #000;
-          padding-top: 1rem;
-          display: flex;
-          flex: 1 1 100%;
-          flex-flow: column;
-        }
-
-        nav ul {
-          display: flex;
-          flex-flow: column;
-        }
-        button {
-          display: flex;
-          background-color: white;
-          transition-duration: 0.5s;
-          margin: 1rem;
-          padding: 0.2rem;
-          font-size: 1rem;
-          min-width: 115px;
-          text-align: center;
-        }
-
-        button:hover {
-          background-color: grey;
-        }
-        header h1 {
-          display: flex;
-          font-family: "Didact Gothic", sans-serif;
-          color: black;
-          text-align: center;
-          font-size: 3rem;
-        }
-        h2 {
-          margin-left: 2rem;
-        }
-        p {
-          margin-left: 2rem;
-        }
-        img {
-          margin-left: 2rem;
-        }
-      }
-      @media (min-width: 1000px) {
-        h2 {
-          margin-left: 4rem;
-        }
-        p {
-          margin-left: 4rem;
-        }
-        img {
-          margin-left: 4rem;
-        }
-      }
-    </style>
   </head>
 
   <header class="banner">
@@ -225,6 +45,7 @@
       </div>
     </nav>
   </header>
+  <hr />
   <body>
     <section id="liste"></section>
     <aside id="modal">
@@ -238,6 +59,7 @@
         </article>
       </template>
     </aside>
+    <hr class="line" />
     <footer>
       Adresse: Guldbergsgade 97 1234 København K Åbningstider: Mandag - Fredag
       10.30-22 Lørdag 12-00 - 23.00
@@ -273,9 +95,6 @@
         console.log("Albums", albums);
         visAlbums();
       }
-      // function vis(json) {
-      //   console.log(json);
-      // }
 
       const dest = document.querySelector("#liste");
       const skabelon = document.querySelector("template").content;
