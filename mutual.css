@@ -3,6 +3,10 @@ body {
   padding: 3rem;
   background-color: rgb(240, 241, 243);
 }
+.overskrift {
+  align-items: center;
+  margin: 0;
+}
 /* Style all font icons */
 .fa {
   padding: 2rem;
@@ -25,7 +29,7 @@ section {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(3, 1fr);
-  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 }
 img {
   max-width: 100%;
@@ -34,24 +38,12 @@ img {
   min-height: 200px;
   min-width: 300px;
 }
-.container {
-  height: 200px;
-  position: relative;
-}
-
-.center {
-  margin: 0;
-  /* position: absolute; */
-  top: 50%;
-  left: 50%;
-  margin-left: 10rem;
-}
 
 header h2 {
   font-family: "Didact Gothic", sans-serif;
   color: black;
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 button {
   background-color: white;
@@ -177,7 +169,7 @@ footer {
     margin-right: 10rem;
   }
   .overskrift {
-    min-width: 600px;
+    min-width: 400px;
   }
 }
 
@@ -195,9 +187,10 @@ footer {
     margin-left: 22rem;
   }
   .overskrift {
-    min-width: 700px;
+    min-width: 600px;
+    margin-left: 6rem;
   }
-  /* .line {
-    box-shadow: 0 0 0 0.0625rem #000;
-  } */
+  .center {
+    padding: 2rem;
+  }
 }
